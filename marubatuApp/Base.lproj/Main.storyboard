@@ -158,10 +158,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="P62-f7-PuX">
-                                <rect key="frame" x="175.5" y="186" width="63" height="32"/>
+                                <rect key="frame" x="161.5" y="186" width="91" height="32"/>
                                 <segments>
-                                    <segment title="○"/>
-                                    <segment title="×"/>
+                                    <segment title="彼女"/>
+                                    <segment title="彼氏"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md9-gy-Obb">

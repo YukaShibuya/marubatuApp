@@ -138,16 +138,17 @@ class ViewController: UIViewController {
     func showAlert(message:String){
         
        let alert = UIAlertController(title: nil, message: message, preferredStyle:.alert)
-                     let close = UIAlertAction(title: "閉じる", style:.cancel, handler: nil)
+//       ハンドラー nilだと、閉じるだけ
+        var close = UIAlertAction(title: "閉じる", style:.cancel, handler: nil)
                      alert.addAction(close)
                      present(alert,animated: true,completion: nil)
         
+        
         if currentQuestionsNum >= questions.count{
-            
-            
-        let close = UIAlertAction(title: "閉じる", style:.cancel, handler:{(action: UIAlertAction!) in
-//                保存
-        //        anscountというキーのユーザーデフォルトに、anscountつまり正解数を入れる
+//    UIAction　ボタンを押した時に何か動作をしてくれる
+            close = UIAlertAction(title: "閉じる", style:.cancel, handler:{(action: UIAlertAction!) in
+//              保存
+//        anscountというキーのユーザーデフォルトに、anscountつまり正解数を入れる
             UserDefaults.standard.set(self.anscounts ,forKey: "anscount")
                
        
@@ -158,6 +159,8 @@ class ViewController: UIViewController {
                           
             }
        ) }
+       alert.addAction(close)
+                     present(alert,animated: true,completion: nil)
         
     }
        
